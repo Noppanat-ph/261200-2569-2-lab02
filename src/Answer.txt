@@ -1,0 +1,17 @@
+1. give a complete description of AirPurifier class
+1.1. what should be instance variables?
+    Answer : instance variables มี model:String , serialNo:String , power:boolean , fanSpeed:int
+1.2. what should be instance methods?
+    Answer : instance methods มี turnOn():void , turnOff():void , setFanSpeed(int speed):void , status():void
+1.3. what should be class variables?
+    Answer : class variables มี numberOfPurifiers:int (นับจำนวนเครื่องฟอกที่มี) , numberOfActive:int (นับจำนวนเครื่องที่เปิดอยู่)
+1.4. what should be class methods?
+    Answer : class methods มี getNumberOfPurifiers():int , getNumberOfActive():int
+
+2. for each method proposed above, how do you plan to implement it?
+    Answer : turnOn ให้เป็น void ที่ไม่ได้รับค่าใดเข้ามา โดยจะเปลี่ยน power เป็น true
+             turnOff ให้เป็น void ที่ไม่ได้รับค่าใดเข้ามา โดยจะเปลี่ยน power เป็น false
+             setFanSpeed ให้เป็น void ที่รับค่า speed เข้ามา
+             status ให้เป็น void ที่ไม่ได้รับค่าใดเข้ามา โดยจะ print ข้อความออกไป
+             getNumberOfPurifiers() ให้ return เป็น int ที่ไม่ได้รับค่าใดเข้ามา
+             getNumberOfActive() ให้ return เป็น int ที่ไม่ได้รับค่าใดเข้ามา
